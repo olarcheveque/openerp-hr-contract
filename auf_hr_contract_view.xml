@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+    <data>
+
+        <record id="hr_contract_view_tree" model="ir.ui.view">
+            <field name="name">auf.hr.contract.view.tree</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_tree"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="AUF"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="hr_contract_view_form" model="ir.ui.view">
+            <field name="name">auf.hr.contract.view.form</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <label for="AUF" string="champs custom AUF"/>
+                    <field name="AUF"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="hr_contract_view_search" model="ir.ui.view">
+            <field name="name">auf.hr.contract.view.search</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_search"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="AUF"/>
+                </field>
+            </field>
+        </record>
+
+
+    </data>
+</openerp>
